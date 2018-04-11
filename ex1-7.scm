@@ -33,5 +33,5 @@
 (sqrt (+ 100 37))
 (sqrt (+ (sqrt 2) (sqrt 3)))
 (square (sqrt 1000))
-(square (sqrt 9e-20))
+(square (sqrt 9e-20)) ; it works better for small numbers
 (square (sqrt 9e100))
