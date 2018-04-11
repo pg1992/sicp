@@ -1,3 +1,6 @@
+(define (sqrt x)
+        (sqrt-iter 1.0 x))
+
 (define (sqrt-iter guess x)
         (if (good-enough? guess x)
             guess
@@ -14,9 +17,6 @@
 
 (define (square x)
         (* x x))
-
-(define (sqrt x)
-        (sqrt-iter 1.0 x))
 
 (sqrt 9)
 (sqrt (+ 100 37))
