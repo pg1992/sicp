@@ -15,6 +15,12 @@
 (define (good-enough? guess x)
         (< (abs (- x (square guess))) 0.0001))
 
+(define (new-good-enough? guess x)
+        (< (abs (/ (change guess x) guess)) 1e-5))
+
+(define (change guess x)
+        (- guess (improve guess x)))
+
 (define (square x)
         (* x x))
 
