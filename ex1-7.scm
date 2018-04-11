@@ -6,6 +6,11 @@
             guess
             (sqrt-iter (improve guess x) x)))
 
+(define (new-sqrt-iter guess x)
+        (if (new-good-enough? guess x)
+            guess
+            (new-sqrt-iter (improve guess x) x)))
+
 (define (improve guess x)
         (average guess (/ x guess)))
 
