@@ -1,5 +1,5 @@
 (define (sqrt x)
-        (sqrt-iter 1.0 x))
+        (new-sqrt-iter 1.0 x))
 
 (define (sqrt-iter guess x)
         (if (good-enough? guess x)
