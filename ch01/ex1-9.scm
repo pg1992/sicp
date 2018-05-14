@@ -11,7 +11,7 @@
       b
       (+ (dec a) (inc b))))
 
-(plus 4 5)
+; linear recursive process
 ; (inc (plus 3 5))
 ; (inc (inc (plus 2 5)))
 ; (inc (inc (inc (plus 1 5))))
@@ -21,12 +21,12 @@
 ; (inc (inc 7))
 ; (inc 8)
 ; 9
-; linear recursive process
+(plus 4 5)
 
-(plus-new 4 5)
+; linear iterative process
 ; (plus-new 3 6)
 ; (plus-new 2 7)
 ; (plus-new 1 8)
 ; (plus-new 0 9)
 ; 9
-; linear iterative process
+(plus-new 4 5)
