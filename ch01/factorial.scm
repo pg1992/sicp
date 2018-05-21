@@ -1,11 +1,15 @@
+(define n 6)
+
 ; linear recursive
 (define (factorial n)
   (if (= n 1)
       1
       (* n (factorial (- n 1)))))
 
+(factorial n)
+
 ; linear iterative
-(define (new-fact n)
+(define (factorial n)
   (define (iter product counter)
     (if (> counter n)
         product
@@ -13,5 +17,4 @@
               (+ counter 1))))
   (iter 1 1))
 
-(factorial 6)
-(new-fact 6)
+(factorial n)
